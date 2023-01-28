@@ -45,6 +45,8 @@ Depending on the command, `help()` will even handle alternative help options, e.
 
 If `help()` doesn't work with a command's alternative help option, you can still do `CMD --help-option | bathelp`.
 
+If you wish to run your shell's built-in `help` command instead, you can bypass shell function lookup by prefixing the command with `command`. For example, to view help for the built-in shell command `for`, run: `command help for`
+
 ### `bat` theme support
 
 The syntax works nicely with most `bat` themes. In some cases, even better than with the default Monokai theme (used in the above example). You can find examples of working themes [here](https://github.com/victor-gp/cmd-help-sublime-syntax/tree/demo/docs/examples/theme).
